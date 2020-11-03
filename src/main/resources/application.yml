@@ -1,7 +1,13 @@
 spring:
   datasource:
-    url: jdbc:h2:~/data/eatgo
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/itembank?serverTimezone=UTC
+    username: root
+    password: root
   jpa:
+    show-sql: true
     hibernate:
       ddl-auto: update
+  jackson:
+    property-naming-strategy: SNAKE_CASE
 
