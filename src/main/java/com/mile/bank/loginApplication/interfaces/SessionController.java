@@ -30,7 +30,7 @@ public class SessionController {
 
         User user = userService.authenticate(email, password);
 
-        String accesstoken = jwtUtil.createToken(user.getId(), user.getName());
+        String accesstoken = jwtUtil.createToken(user);
 
         String url = "/session";
         return ResponseEntity.created(new URI(url)).body(
