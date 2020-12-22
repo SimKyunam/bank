@@ -36,6 +36,8 @@ public class User {
 
         private String email;
 
+        private String name;
+
         private String phoneNumber;
 
         private LocalDateTime registeredAt;

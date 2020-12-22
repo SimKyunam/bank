@@ -26,6 +26,10 @@ dependencies {
 	implementation 'com.fasterxml.jackson.module:jackson-module-jsonSchema'
 	runtimeOnly 'mysql:mysql-connector-java'
 
+	implementation 'io.jsonwebtoken:jjwt-api:0.10.7'
+	runtime 'io.jsonwebtoken:jjwt-impl:0.10.7'
+	runtime 'io.jsonwebtoken:jjwt-jackson:0.10.7'
+
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.projectlombok:lombok'

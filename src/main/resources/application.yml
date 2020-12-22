@@ -11,3 +11,8 @@ spring:
   jackson:
     property-naming-strategy: SNAKE_CASE
 
+jwt:
+  key: 12345678901234567890123456789012
+
+
+
